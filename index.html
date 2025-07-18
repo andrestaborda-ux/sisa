@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Futuro: Basket y Programación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-oscuro: #0a0f2c;
+      --negro: #000000;
+      --azul-neon: #00bfff;
+      --gris-claro: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--negro);
+      color: var(--gris-claro);
+    }
+
+    header {
+      background: var(--azul-oscuro);
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 2px solid var(--azul-neon);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: var(--azul-neon);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .seccion, .contacto {
+      background: #111828;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--azul-neon);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .seccion.visible, .contacto.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .seccion h2, .contacto h2 {
+      color: var(--azul-neon);
+      margin-bottom: 1rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .seccion p, .seccion ul {
+      font-size: 1rem;
+      color: #d0d0d0;
+    }
+
+    .seccion ul {
+      padding-left: 1.2rem;
+      list-style: square;
+    }
+
+    .contacto {
+      background: #0c122b;
+      text-align: center;
+      border: 2px dashed var(--azul-neon);
+    }
+
+    .contacto a {
+      color: var(--gris-claro);
+      font-size: 1.1rem;
+      text-decoration: none;
+      background: var(--azul-neon);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 0.5rem;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .contacto a:hover {
+      background: #009acf;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0a0f2c;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .seccion {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Camino Personal</h1>
+    <p>Entre el baloncesto 🏀 y la programación 💻</p>
+  </header>
+
+  <div class="container">
+    <section class="seccion"> <h2>¿Quién Soy?</h2>
+      <p>Soy una persona enfocada, apasionada y con grandes sueños. Mi vida gira en torno a dos mundos que me inspiran: el baloncesto y la programación. Cada uno me reta y me hace crecer en cuerpo, mente y espíritu.</p>
+    </section>
+
+    <section class="seccion">
+      <h2>Mi Futuro en el Basket 🏀</h2>
+      <p>El baloncesto me enseña disciplina, constancia y liderazgo. Entreno para mejorar mi técnica, mi físico y mi visión en la cancha. Sueño con llegar a representar a mi institución, y avanzar hacia una carrera profesional en el deporte.</p>
+    </section>
+
+    <section class="seccion">
+      <h2>Mi Futuro en la Programación 💻</h2>
+      <p>La programación me permite construir soluciones, automatizar tareas y desarrollar ideas increíbles. Estoy aprendiendo HTML, CSS, JavaScript y Python. Mi meta es crear software útil y creativo, tal vez una app deportiva o un videojuego.</p>
+    </section>
+
+    <section class="seccion">
+      <h2>🎬 Películas Favoritas</h2>
+      <ul>
+        <li>Iron Man</li>
+        <li>Ip Man</li>
+        <li>Spiderman</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>🎮 Pasatiempos</h2>
+      <ul>
+        <li>Dibujar</li>
+        <li>Jugar videojuegos</li>
+        <li>Aprender cosas nuevas</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>🧠 Habilidades</h2>
+      <ul>
+        <li>Inteligente</li>
+        <li>Atento</li>
+        <li>Buena persona</li>
+      </ul>
+    </section>
+
+    <section class="seccion">
+      <h2>🍽️ Comida Favorita</h2>
+      <ul>
+        <li>Salchipapas</li>
+        <li>Arroz con huevo</li>
+        <li>Torta de chocolo</li>
+      </ul>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres hablar conmigo o saber más sobre mis proyectos?</p>
+      <a href="mailto:Andres737390@gmail.com">Andres737390@gmail.com</a>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 | Diseñado por Andrés | Pasión por el Código & el Deporte
+  </footer>
+
+  <script>
+    // Animación al hacer scroll usando IntersectionObserver
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.seccion, .contacto').forEach((seccion) => {
+      observador.observe(seccion);
+    });
+  </script>
+</body>
+</html>
